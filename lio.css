@@ -1,0 +1,235 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(94, 111, 163);
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color:rgb(22, 99, 124);
+    color:aqua;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar-menu li a.hover{
+    color: aqua;
+}
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Content Section Styles */
+.content-section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(6, 28, 76);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(53, 49, 49, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Home Section Styles */
+.home-section {
+    /* Specific styles for the home section */
+}
+
+.home-content {
+    display: flex;
+    align-items: center; /* Vertically align the image and text */
+    gap: 20px; /* Add some space between the image and text */
+}
+
+.home-info {
+    flex: 1; /* Take up available space */
+}
+
+.home-image {
+    flex: 1;
+    text-align: center; /* Center the image */
+}
+
+.home-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+    /* Specific styles for the contact section */
+}
+
+/* Form Styles */
+.form-group {
+    
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+.container
+{
+   /* width: 100%; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: rgb(65, 138, 187);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.all{
+    display: flex;
+    
+}
+.me{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'col1 col2 col3';
+    margin-bottom: 30px;
+
+}
+.col1{
+    grid-area: col1;
+    background-color: aqua;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.col2{
+    grid-area: col2;
+    background-color: aqua;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.container-two{
+    width: 77%;
+    margin: auto;
+}
+.col3{
+    grid-area: col3;
+    background-color: aqua;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-section h2, .content-section p, .form-group{
+    font-size: 20px;
+    color: aliceblue;
+}
+.exp {
+    display: grid;
+    grid-template-areas:
+    'content-section1 content-section2';
+    gap: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+   
+}
+.content-section1 {
+    background-color: aqua;
+    height: 300px;
+    align-items: center;
+}
+.content-section2 {
+    background-color: aqua;
+    height: 300px;
+    align-self: center;
+    justify-content: center;
+}
